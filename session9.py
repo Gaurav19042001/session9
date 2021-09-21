@@ -4,29 +4,29 @@ lambda keyword is used to create anonymous function
 in lambda function you can take any no of arguments but there should be only single expression
 '''
 
-'''string='Python'
-print(lambda string:string)'''
+string='Python'
+print(lambda string:string)
 
-'''x='python'
-(lambda x:print(x))(x)'''
+x='python'
+(lambda x:print(x))(x)
 
-'''def cube(x):
+def cube(x):
     return x*x*x
 
 cube2=lambda x:x*x*x   #lambda argument:expression .....syntax
 
 print(cube(3))
 print(cube2(3))
-'''
+
 '''lambda function used inside a normal function'''
-'''def power(n):
+def power(n):
     return lambda x:x**n
 
 base=power(2) 
 print("8 power of 2= ",base(8))
 
 base=power(5)
-print("5 power of 5= ",base(5))'''
+print("5 power of 5= ",base(5))
 
 '''
 Create a function that takes a "base number" as an argument. 
@@ -44,16 +44,16 @@ plus_five(-8) ➞ -3
 
 '''
 
-'''def plus_func(base_num):
+def plus_func(base_num):
     return lambda x:x+base_num
 x=plus_func(7)
-print(x(5))'''
+print(x(5))
 
 '''filter()
 allows you to process an iterable and extract those items that satisfy a given condition
 '''
 
-'''def func(variable):
+def func(variable):
     letters=['a','e','i','o','u']
     if (variable in letters):
         return True
@@ -64,17 +64,17 @@ sequence=['s','e','r','i','t']
 filtered=filter(func,sequence)
 print("the filtered letters are: ")
 for i in filtered:
-    print(i)'''
+    print(i)
 
 '''map()
 allows you to process & transform all the items in an iterable without using an explicit for loop '''
 
-'''def addition(n):
+def addition(n):
     return n+n
 
 numbers=(1,2,3,4)
 result=map(addition,numbers)
-print(list(result))'''
+print(list(result))
 
 '''create a function to check whether the number is divisible by 2 or not
 take list of numbers and check all the numbers 
